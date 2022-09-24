@@ -483,12 +483,17 @@
             </p>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-secondary">
+            <form
+              class="p-4 p-md-5 border rounded-3 bg-secondary"
+              action="https://formsubmit.co/payo.metal@gmail.com"
+              method="POST"
+            >
               <div class="form-floating mb-3">
                 <input
                   id="floatingInput"
                   class="form-control"
                   type="text"
+                  name="Name"
                   placeholder="John Doe"
                 />
                 <label for="floatingInput" class="text-dark">Your Name</label>
@@ -498,6 +503,7 @@
                   id="floatingMailInput"
                   class="form-control"
                   type="email"
+                  name="Mail"
                   placeholder="your@mail.com"
                 />
                 <label for="floatingMailInput" class="text-dark">Email</label>
@@ -507,6 +513,7 @@
                   style="height: 200px"
                   class="form-control"
                   placeholder="Leave a comment here"
+                  name="Message"
                   id="floatingTextarea"
                 ></textarea>
                 <label for="floatingTextarea" class="text-dark"
@@ -516,6 +523,17 @@
               <button class="w-100 btn btn-lg btn-dark" type="submit">
                 Send!
               </button>
+              <input
+                type="hidden"
+                name="_next"
+                value="mokenuf.github.io/mokenuf-cv/pages/thanks.html"
+              />
+              <input type="hidden" name="_subject" value="You've got mail!" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Hey! This is an automated response so I can let you know your mail came through. I promisse I'll get in touch with you as soon as I can."
+              />
             </form>
           </div>
         </div>
