@@ -1,12 +1,5 @@
 .parallax {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url(../img/ss2.png);
-  min-height: 100vh;
+  min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,7 +12,18 @@
   }
 }
 
-.parallax2 {
+.parallax--featured {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(../img/hero.png);
+  min-height: 100vh;
+}
+
+.parallax--about {
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 1) 0%,
@@ -27,20 +31,19 @@
       rgba(0, 0, 0, 1) 100%
     ),
     url(../img/ss1.png);
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-@media only screen and (max-device-width: 1366px) {
-  .parallax2 {
-    background-attachment: scroll;
-  }
+.parallax--stack {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(../img/ss2.png);
 }
 
-.parallax3 {
+.parallax--contact {
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 1) 0%,
@@ -48,36 +51,4 @@
       rgba(0, 0, 0, 1) 100%
     ),
     url(../img/ss3.png);
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-device-width: 1366px) {
-  .parallax3 {
-    background-attachment: scroll;
-  }
-}
-
-.parallax4 {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url(../img/ss4.png);
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-device-width: 1366px) {
-  .parallax4 {
-    background-attachment: scroll;
-  }
 }
